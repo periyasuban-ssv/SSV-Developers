@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-2">
               <div className="bg-amber-500 p-0 rounded-full h-20 w-20">
                 <img
-                  src="/ssv round.png"
+                  src="ssvround.png"
                   alt="Logo"
                   className="h-full w-full object-contain rounded-full"
                 />
