@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoimg from "../src/assets/ssvround.png";
+import logoimg from "../assets/ssvround.png";
 import {
   Facebook,
   X,
