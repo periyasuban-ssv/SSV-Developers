@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                     Call
                   </p>
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+91 9150134954"
                     className="text-xl font-bold hover:text-amber-500 transition-colors"
                   >
                     +91 9150134954
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
                     Email
                   </p>
                   <a
-                    href="mailto:contact@ssvdevelopers.com"
+                    href="mailto:ssvbuildersinfra@gmail.com"
                     className="text-xl font-bold hover:text-amber-500 transition-colors"
                   >
                     ssvbuildersinfra@gmail.com
