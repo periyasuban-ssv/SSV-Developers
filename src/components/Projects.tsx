@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { Project } from "../types";
+import { Project } from "../../types";
 import { SlidersHorizontal } from "lucide-react";
 
 const projects: Project[] = [
