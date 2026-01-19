@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, HardHat, ChevronDown } from "lucide-react";
-import logoimg from '../assets/ssvround.png';
+import logoimg from "../src/assets/ssvround.png";
 
-  const Navbar: React.FC = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
