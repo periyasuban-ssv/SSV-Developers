@@ -105,7 +105,7 @@ import logoimg from '../assets/ssvround.png';
               className={`relative flex items-center justify-center h-20 w-20 rounded-full transition-all duration-500 shadow-lg ${scrolled ? "bg-amber-500 rotate-0" : "bg-slate-900 -rotate-6 group-hover:rotate-0"}`}
             >
               <img
-                src="ssvround.png"
+                src={logoimg}
                 alt="Logo"
                 className="h-full w-full object-contain rounded-full"
               />

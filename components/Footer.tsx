@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logoimg from "../assets/ssvround.png";
 import {
   Facebook,
   X,
@@ -31,11 +32,11 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="bg-amber-500 p-0 rounded-full h-20 w-20">
-                <img
-                  src="ssvround.png"
+               <img
+                  src={logoimg}
                   alt="Logo"
-                  className="h-full w-full object-contain rounded-full"
-                />
+                 className="h-full w-full object-contain rounded-full"
+                 />
               </div>
               <span className="font-black text-2xl tracking-tighter text-white">
                 <span className="text-amber-500 uppercase">Developers</span>
