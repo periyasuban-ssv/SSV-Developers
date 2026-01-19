@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./src/components/Navbar";
-import Hero from "./src/components/Hero";
-import About from "./src/components/About";
-import Services from "./src/components/Services";
-import StatsChart from "./src/components/StatsChart";
-import Projects from "./src/components/Projects";
-import Contact from "./src/components/Contact";
-import Footer from "./src/components/Footer";
-import AIChatWidget from "./src/components/AIChatWidget";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import StatsChart from "./components/StatsChart";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import AIChatWidget from "./components/AIChatWidget";
 import { ArrowUp } from "lucide-react";
 
 function App() {

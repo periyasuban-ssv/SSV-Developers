@@ -1,6 +1,6 @@
 import React from "react";
 import { Home, Building2, Hammer, Ruler } from "lucide-react";
-import { Service } from "../../types";
+import { Service } from "../types";
 
 const services: Service[] = [
   {
