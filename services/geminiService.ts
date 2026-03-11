@@ -21,7 +21,7 @@ export const sendMessageToGemini = async (
   message: string,
   history: { role: 'user' | 'model'; text: string }[]
 ): Promise<string> => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
   
   if (!apiKey || apiKey === "") {
     throw new Error("AUTH_REQUIRED");
