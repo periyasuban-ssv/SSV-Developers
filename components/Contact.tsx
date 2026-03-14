@@ -119,7 +119,7 @@ const Contact: React.FC = () => {
               ) : (
                 <>
                   <h3 className="text-3xl font-extrabold text-slate-900 mb-10 text-center">
-                    Send A Message
+                    SEND A Message
                   </h3>
 
                   <form
