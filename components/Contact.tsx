@@ -105,22 +105,20 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* FORM */}
+          {/* MODERN CONTACT FORM */}
           <div className="lg:col-span-7">
-            <div className="bg-white rounded-3xl p-10 shadow-xl">
+            <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100">
               {formState === "success" ? (
                 <div className="text-center py-16">
-                  <CheckCircle className="mx-auto text-green-600 w-16 h-16 mb-4" />
-
-                  <h4 className="text-2xl font-bold text-slate-900">
+                  <CheckCircle className="mx-auto text-green-600 w-16 h-16 mb-4 animate-bounce" />
+                  <h4 className="text-2xl font-bold text-slate-900 mb-2">
                     Message Sent Successfully
                   </h4>
-
                   <p className="text-slate-500">We will contact you soon.</p>
                 </div>
               ) : (
                 <>
-                  <h3 className="text-2xl font-black text-slate-900 mb-8">
+                  <h3 className="text-3xl font-extrabold text-slate-900 mb-10 text-center">
                     Send A Message
                   </h3>
 
@@ -129,52 +127,82 @@ const Contact: React.FC = () => {
                     onSubmit={handleSubmit}
                     className="space-y-6"
                   >
+                    {/* NAME */}
                     <input
                       type="text"
                       name="user_name"
                       required
                       placeholder="Full Name"
-                      className="w-full border p-4 rounded-xl text-slate-900"
+                      className="w-full p-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all text-slate-900 shadow-sm placeholder-gray-400"
                     />
+
+                    {/* EMAIL */}
                     <input
                       type="email"
                       name="user_email"
                       required
                       placeholder="Email Address"
-                      className="w-full border p-4 rounded-xl text-slate-900"
+                      className="w-full p-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all text-slate-900 shadow-sm placeholder-gray-400"
                     />
-                    {/* PHONE FIELD */}
+
+                    {/* PHONE */}
                     <PhoneInput
-                    <PhoneInput
-                     
-                       <PhoneInput
-                       
- 
-  
-  
-   
-                    
+                      country={"in"}
+                      value={phone}
+                      onChange={(phone) => setPhone(phone)}
+                      enableSearch={true}
+                      countryCodeEditable={false}
+                      inputProps={{
+                        name: "phone",
+                        required: true,
+                      }}
+                      inputStyle={{
+                        width: "100%",
+                        height: "50px",
+                        fontSize: "16px",
+                        color: "#000",
+                        backgroundColor: "#f8fafc",
+                        borderRadius: "12px",
+                        border: "2px solid #e2e8f0",
+                        paddingLeft: "50px",
+                      }}
+                      dropdownStyle={{
+                        color: "#000",
+                        backgroundColor: "#fff",
+                      }}
+                      searchStyle={{
+                        color: "#000",
+                      }}
+                    />
+
+                    {/* HIDDEN PHONE FIELD */}
+                    <input type="hidden" name="phone" value={phone} />
+
+                    {/* PROJECT TYPE */}
                     <select
                       name="project_type"
-                      className="w-full border p-4 rounded-xl text-slate-900"
+                      className="w-full p-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all text-slate-900 shadow-sm"
                     >
                       <option>Residential Construction</option>
                       <option>Commercial Development</option>
                       <option>Industrial Infrastructure</option>
                       <option>Renovation</option>
                     </select>
+
+                    {/* MESSAGE */}
                     <textarea
                       name="message"
-                      rows={4}
+                      rows={5}
                       required
                       placeholder="Project Details"
-                      className="w-full border p-4 rounded-xl text-slate-900"
+                      className="w-full p-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all text-slate-900 shadow-sm placeholder-gray-400"
                     />
-                    {/* BUTTON FIX */}
+
+                    {/* SUBMIT BUTTON */}
                     <button
                       type="submit"
                       disabled={formState === "sending"}
-                      className="w-full bg-amber-500 text-black font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-amber-600"
+                      className="w-full bg-amber-500 text-black font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-amber-600 shadow-lg transition-all transform hover:scale-105 active:scale-95"
                     >
                       {formState === "sending" ? (
                         "Sending..."
